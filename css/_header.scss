@@ -1,0 +1,351 @@
+.head {
+    margin-top: 80px;
+
+    .carousel {
+        height: 100%;
+
+    }
+}
+
+.img-controlls {
+    width: 100%;
+    max-width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.crsl-btn {
+    margin-top: 15px;
+    background-color: $main-red;
+    color: #fff;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .6s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(255, 23, 69, 0.92);
+        color: rgba(255, 255, 255, 0.826);
+        text-decoration: none;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1218px) {
+    .head {
+        .carousel-item {
+            .crsl-bg {
+                min-height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .head {
+        .carousel {
+            min-height: 300px;
+        }
+    }
+
+    .carousel-item {
+        .crsl-bg {
+            width: 100%;
+            min-height: 300px;
+            background-position: 50% 50%;
+        }
+
+        .carousel-caption {
+            margin-top: 80px;
+        }
+    }
+}
+
+
+
+
+//first-slide - thrid
+.main-red {
+    color: $main-red;
+}
+
+.pizza {
+    display: flex;
+    padding-top: 80px;
+    align-items: center;
+
+    .div-img {
+        img {
+            width: 100%;
+
+
+        }
+    }
+
+    .pizza-text {
+        text-align: left;
+        color: $slide-yellow;
+        font-size: 3rem;
+
+    }
+}
+
+@media (max-width:1440px) {
+    .pizza {
+        .div-img {
+            img {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .pizza {
+        .div-img {
+            img {
+                max-width: 320px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pizza {
+        flex-direction: column;
+
+        .pizza-text {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+//second slide 
+.pickup {
+    h2 {
+        margin-bottom: 25px;
+        font-size: 2.8rem;
+        color: $slide-yellow;
+    }
+}
+
+.nachos-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .div-img {
+        img {
+            max-width: 300px;
+        }
+    }
+
+    .nachos-text {
+        position: relative;
+        color: $slide-yellow;
+        text-align: left;
+        font-size: 2.4rem;
+        max-width: 60%;
+
+        ::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/nachos-arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 50px;
+            left: -150px;
+            top: -20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pickup {
+        h2 {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .nachos-flex {
+        flex-direction: column;
+
+        .nachos-text {
+            font-size: 1.8rem;
+        }
+
+        .nachos-text span {
+            &::after {
+                display: none;
+
+            }
+        }
+    }
+}
+
+// fourth-slide
+
+.kg-rolls {
+    h2 {
+        margin-bottom: 25px;
+        font-size: 2.8rem;
+        color: $slide-yellow;
+    }
+}
+
+.rolls-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .div-img {
+        img {
+            max-width: 300px;
+        }
+    }
+
+    .rolls-text {
+        position: relative;
+        color: $slide-yellow;
+        text-align: left;
+        font-size: 1.2rem;
+        max-width: 60%;
+        transform: rotate(-5.28deg);
+
+        ::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/sticks.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 350px;
+            height: 120px;
+            left: 100px;
+            bottom: -80px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .rolls-flex {
+        .div-img {
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .rolls-flex {
+        flex-direction: column;
+
+        .rolls-text {
+            font-size: 1.8rem;
+        }
+
+        .rolls-text span {
+            &::after {
+                bottom: -10px;
+                transform: rotate(-55.28deg);
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .rolls-flex {
+
+
+        .rolls-text span {
+            &::after {
+                bottom: -10px;
+                right: 40px;
+                transform: rotate(-55.28deg);
+            }
+        }
+    }
+}
+
+// fifth-slide sixs
+
+.filla-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .div-head {
+        h2 {
+            font-size: 3rem;
+            color: $slide-yellow;
+            margin-bottom: 30px;
+        }
+    }
+
+    .div-head1 {
+        h2 {
+            font-size: 3rem;
+            color: $slide-yellow;
+            margin-bottom: 30px;
+        }
+    }
+
+    .div-img {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            max-width: 180px;
+        }
+    }
+}
+.mb-50 {
+    margin-bottom: 25px;
+}
+
+@media (max-width:1012px) {
+    .filla-flex {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 475px) {
+    .filla-flex {
+        .div-head1 {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width:1850px) {
+    .pizza {
+        margin-bottom: 50px;
+    }
+    .pickup {
+        margin-bottom: 110px;
+    }
+    .kg-rolls {
+        margin-bottom: 80px;
+    }
+    .filla-flex {
+        margin-bottom: 100px;
+    }
+}

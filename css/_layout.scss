@@ -1,0 +1,46 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+html,
+body {
+    font-size: calc(.5em + 1vw);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+@media (min-width: 425px) {
+
+    html,
+    body {
+        font-size: calc(.45em + .8vw);
+    }
+}
+
+@media (min-width: 1440px) {
+  
+
+    html,
+    body {
+        font-size: calc(.4em + .7vw);
+    }
+}
+
+@media (min-width: 1979px) {
+   
+    html,
+    body {
+        font-size: calc(.4em + .5vw);
+    }
+}

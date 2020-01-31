@@ -1,4 +1,7 @@
-.h2-popular {
+.popular-menu {
+    padding-bottom: 50px;
+}
+.h2-all {
     text-align: center;
     color: #222222;
     margin-top: 30px;
@@ -11,7 +14,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .pop-menu-item {
@@ -27,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        min-width: 300px;
+        min-width: 220px;
 
 
 
@@ -73,7 +76,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 120px;
+                width: 100%;
+                max-width: 120px;
                 border-radius: 10px;
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -104,12 +108,61 @@
         }
     }
 }
+.more-container {
+    display: flex;
+}
+.btn-more {
+    margin-top: 15px;
+    margin-left: auto;
+    &:hover {
+        cursor: pointer;
+
+    }
+    img {
+        max-width: 50px;
+    }
+}
+
 @media (max-width: 938px) {
     .pop-menu-row {
         justify-content: center;
         padding: 0 -8px;
     }
+
     .pop-menu-item {
         margin: 15px 8px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .pop-menu-item {
+        .item-container {
+            width: 100%;
+
+            .price-btn {
+                button {
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .pop-menu-item {
+        flex-basis: 40%;
+
+        .item-container {
+            min-width: 100px;
+            max-width: 150px;
+            .price-btn {
+                button {
+                    max-width: 60px;
+                    img {
+                        max-width: 15px;
+                    }
+                }
+            }
+        }
     }
 }

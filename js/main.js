@@ -1,3 +1,4 @@
+
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.header__list'),
     menuItem = document.querySelectorAll('.header__link'),

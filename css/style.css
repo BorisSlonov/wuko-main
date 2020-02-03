@@ -328,6 +328,9 @@ button {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.699);
   }
+  .burger_active {
+    margin-top: 7px;
+  }
   .burger_active span {
     margin-bottom: -7px;
     -webkit-transition: .5s;
@@ -1007,6 +1010,11 @@ button {
   }
 }
 
+.page-reviews .h2-all {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
 .crsl-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,13 +1037,13 @@ button {
 
 @media (max-width: 595px) {
   .page-reviews {
-    margin-top: 250px;
+    margin-top: 300px;
   }
 }
 
 @media (max-width: 425px) {
   .page-reviews {
-    margin-top: 200px;
+    margin-top: 240px;
   }
 }
 

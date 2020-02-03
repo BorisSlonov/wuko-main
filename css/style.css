@@ -200,6 +200,10 @@ button {
   margin-right: 15px;
 }
 
+.header__info .number a {
+  color: #222222;
+}
+
 .header__info .number .time {
   color: rgba(0, 0, 0, 0.589);
   font-size: 0.95rem;
@@ -924,7 +928,7 @@ button {
 
 .stock-item .item-container h3 {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .stock-item .item-container a {
@@ -945,23 +949,35 @@ button {
 
 .stock-item .item-container a span {
   padding-bottom: 8px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .stock-item .item-container a:hover {
   cursor: pointer;
 }
 
+.stock-item:nth-child(2) {
+  background-image: url(../img/stocks/stock2.png);
+}
+
+.stock-item:nth-child(3) {
+  background-image: url(../img/stocks/stock3.png);
+}
+
+.stock-item:last-child {
+  background-image: url(../img/stocks/stock4.png);
+}
+
 @media (max-width: 951px) {
+  .stock-bg {
+    height: 550px;
+  }
   .stock-item {
     min-height: 200px;
   }
 }
 
 @media (max-width: 595px) {
-  .stock-bg {
-    padding-bottom: 0p;
-  }
   .stock-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1030,7 +1046,7 @@ button {
 }
 
 .footer {
-  border-top: 2px solid #ccc;
+  border-top: 1px solid #E1E1E1;
   margin-top: 50px;
 }
 
@@ -1047,7 +1063,7 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 50px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #E1E1E1;
   padding-bottom: 15px;
 }
 
@@ -1069,6 +1085,10 @@ button {
           align-items: center;
 }
 
+.footer-footer div span {
+  color: #9C9C9C;
+}
+
 .footer-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1088,8 +1108,14 @@ button {
       align-self: flex-start;
 }
 
-.footer-item ul {
+.footer-item ul a {
   color: rgba(0, 0, 0, 0.562);
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.footer-item ul a:hover {
+  color: rgba(0, 0, 0, 0.962);
 }
 
 .footer-item ul .footer-item-time {
@@ -1116,6 +1142,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.social a:hover {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.658);
 }
 
 .social a img {
@@ -1152,6 +1184,13 @@ button {
   }
   .footer-item h4 {
     margin-bottom: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer-item ul {
+    list-style: none;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

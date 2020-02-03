@@ -43,7 +43,7 @@
 
         h3 {
             color: #fff;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         a {
@@ -59,7 +59,7 @@
           
             span {
                 padding-bottom: 8px;
-                font-size: 16px;
+                font-size: 14px;
             }
             &:hover {
                 cursor: pointer;
@@ -68,17 +68,26 @@
 
     }
 }
-
+.stock-item:nth-child(2) {
+    background-image: url(../img/stocks/stock2.png);
+}
+.stock-item:nth-child(3) {
+    background-image: url(../img/stocks/stock3.png);
+}
+.stock-item:last-child {
+    background-image: url(../img/stocks/stock4.png);
+}
 @media (max-width: 951px) {
+    .stock-bg {
+        height: 550px;
+    }
     .stock-item {
         min-height: 200px;
     }
 }
 
 @media (max-width: 595px) {
-    .stock-bg {
-        padding-bottom: 0p;
-    }
+  
 
     .stock-item {
         flex-basis: 100%;

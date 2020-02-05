@@ -309,7 +309,11 @@ button {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     overflow: auto;
-    background-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.933);
+  }
+  .header__list li {
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(255, 23, 69, 0.322);
   }
   .menu_active {
     left: 0;
@@ -712,8 +716,8 @@ button {
 }
 
 .pop-menu-item {
-  -ms-flex-preferred-size: 32.333%;
-      flex-basis: 32.333%;
+  -ms-flex-preferred-size: 24.333%;
+      flex-basis: 24.333%;
   padding: 10px;
   margin-top: 16px;
   border: 1px solid rgba(0, 0, 0, 0.158);

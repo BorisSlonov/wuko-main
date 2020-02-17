@@ -449,6 +449,11 @@ button {
   font-size: 3rem;
 }
 
+.pizza .pizza-img {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+
 @media (max-width: 1440px) {
   .pizza .div-img img {
     max-width: 250px;
@@ -466,7 +471,6 @@ button {
     margin-bottom: 50px;
   }
   .pizza .pizza-text {
-    font-size: 2rem;
     text-align: center;
   }
   .pizza .div-img {
@@ -686,6 +690,18 @@ button {
 
 .crsl-bg.mobile-img {
   display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pizza-mobile {
+  -o-object-position: left bottom;
+     object-position: left bottom;
+}
+
+.present2-mobile {
+  -o-object-position: right top;
+     object-position: right top;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {

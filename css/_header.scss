@@ -78,22 +78,20 @@
 
 .pizza {
     display: flex;
-    padding-top: 80px;
-    align-items: center;
 
-    .div-img {
-        img {
-            width: 100%;
+    align-items: flex-start;
 
 
-        }
-    }
 
     .pizza-text {
         text-align: left;
         color: $slide-yellow;
         font-size: 3rem;
 
+    }
+
+    .pizza-img {
+        object-position: left bottom;
     }
 }
 
@@ -119,11 +117,15 @@
 
 @media (max-width: 768px) {
     .pizza {
-        flex-direction: column;
+
+        margin-bottom: 50px;
 
         .pizza-text {
-            font-size: 2rem;
             text-align: center;
+        }
+
+        .div-img {
+            display: none;
         }
     }
 }
@@ -315,6 +317,7 @@
         }
     }
 }
+
 .mb-50 {
     margin-bottom: 25px;
 }
@@ -339,13 +342,41 @@
     .pizza {
         margin-bottom: 50px;
     }
+
     .pickup {
         margin-bottom: 110px;
     }
+
     .kg-rolls {
         margin-bottom: 80px;
     }
+
     .filla-flex {
         margin-bottom: 100px;
+    }
+}
+
+
+.crsl-bg.mobile-img {
+    display: none;
+    object-fit: cover;
+
+}
+
+.pizza-mobile {
+    object-position: left bottom;
+}
+
+.present2-mobile {
+    object-position: right top;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .crsl-bg.mobile-img {
+        display: block;
+    }
+
+    .crsl-bg.main-img {
+        display: none;
     }
 }

@@ -1,7 +1,14 @@
+.page-reviews {
+    .h2-all {
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+}
 .crsl-container {
     display: flex;
     padding-bottom: 30px;
     margin-top: 50px;
+   
 }
 
 .crsl-item {
@@ -18,13 +25,14 @@
 
 @media (max-width:595px) {
     .page-reviews {
-        margin-top: 250px;
+        margin-top: 300px;
     }
 }
 
 @media (max-width:425px) {
     .page-reviews {
-        margin-top: 200px;
+        margin-top: 240px;
+      
     }
 }
 
